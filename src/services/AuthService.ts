@@ -9,7 +9,7 @@ export const AuthService = {
             localStorage.setItem('token', JSON.stringify(response.data));
             return response.data;
         } catch (error) {
-            throw new Error('An error occurred during login.');
+            toast.error('An error occurred during login.');
         }
     },
 

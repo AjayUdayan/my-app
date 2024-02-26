@@ -55,8 +55,6 @@ import "tailwindcss/tailwind.css";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from 'react-toastify';
 
-
-// Define a custom route component that checks if the user is authenticated
 const PrivateRoute: React.FC<{
   element: React.ReactElement;
   isAuthenticated: boolean;
@@ -65,7 +63,7 @@ const PrivateRoute: React.FC<{
 );
 const token = localStorage.getItem('token');
 // Simulate authentication status
-const isAuthenticated = token ? true : false; // Replace with your actual authentication logic
+const isAuthenticated = token ? true : false; 
 
 // App component
 const App: React.FC = () => {
