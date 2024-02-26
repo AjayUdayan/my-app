@@ -1,0 +1,12 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.login-form {
+  @apply mt-16 max-w-md mx-auto px-4 py-8 border border-gray-300 rounded shadow-md;
+}
+
+.input-field {
+  @apply mb-4;
+}
